@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="content">
+        <h2>Registrar Certificados</h1>
+        <div class="register">
+            <input id="idCertificado" placeholder="ID do Certificado">
+            <input id="nomeAluno" placeholder="Nome do Aluno">
+            <input id="curso" placeholder="Curso">
+            <input id="dtEmissao" placeholder="Data de Emissão">
+            <button onclick="registrarCertificado()">Fazer registro</button>
+        </div>
+        <h2>Certificados</h2>
+        <div>
+            <input id="consultaId" placeholder="ID para Consulta">
+            <button onclick="consultarCertificado()">Consultar</button>
+        </div>
+        <div id="resultadoConsulta"></div>
+        <h2>Revogar Certificados</h2>
+        <div>
+            <input id="revogarId" placeholder="ID para Revogar">
+            <button onclick="revogarCertificado()">Revogar</button>
+        </div>
+        <div id="resultadoRevogacao"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
